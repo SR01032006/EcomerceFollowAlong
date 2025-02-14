@@ -89,3 +89,59 @@ Tech Stack Used
 
  Tech stack used :
    - Backend : node.js
+
+# Milestone 7: In this milestone we are going to create a backend endpoint for user and the focus is on validating user credentials and verifying the encrypted password stored in the database.
+Key features:
+validate user credentials during login: Protect User Data: Keeps passwords safe even if the database is compromised. Privacy: Ensures passwords aren't stored in plain text. Compliance: Meets security standards like GDPR and PCI-DSS. Prevents Password Theft: Hashed passwords are difficult to decipher, increasing security.
+compare the encrypted password with the user’s input: User Enters Credentials:
+The user provides their email/username and password on the login page.
+Fetch User Data from Database:
+The backend retrieves the user record based on the provided email/username. If the user is not found, return an error: "User does not exist."
+Compare Encrypted Passwords:
+Process the user's input password using the same hashing algorithm (e.g., bcrypt). Compare the resulting hash to the stored hashed password. If they match, the user is authenticated; if not, send an error.
+Tech stalk: Backend : bcryptjs.
+
+# Milestone 8: In this milestone, we will create a frontend card component for products and design a homepage to display these cards for each product.
+Key features:
+create a card component: Showcase Products Effectively: Presents product details in a clear and visually appealing way. Reusable Design: Can be used across multiple pages or sections of the app. Improved User Experience: Makes it easy for users to browse and interact with products. Organized Layout: Keeps the homepage clean and structured.
+display those cards on the products page: Create a Dynamic Component: Design a single card component that accepts product details as props. Use Mapping: Use array mapping to iterate over the product list and render a card for each product. Pass Data Dynamically: Pass unique product information (e.g., name, price, image) to each card. Maintain Consistency: Ensure the layout remains uniform for all products.
+Tech stack : Frontend: react
+
+# Milestone 9 : In this milestone, we will create a Createproduct page using react.
+Key features:
+We can add and remove images from the webpage.
+We can preview images.
+We can add our names and descriptions on it.
+We can specify content based on category.
+We can specify tags.
+We can specify prices range.
+We can include our preferred stock.
+We can add our e-mail.
+Tech Stack : React
+
+# Milestone 10 : In this we will create a mongoose schema for products and create and endpoint to store the product details.
+Key features :
+Wrote a product schema.
+Create an end point to validate and store product details in mongodb.
+Defined the structure of product data (e.g., name, description, price, image URL) using Mongoose. -Ensure each field has proper validation (e.g., required fields, correct data types).
+Built a POST endpoint to receive product data.
+Validated and saved the product details to MongoDB.
+Ensured that only valid data is saved in the database, maintaining data integrity and preventing errors.
+Tech Stack : React - frontend - multer.js, controller-product.js, model-product.js
+
+# Milestone 11 : In this milestone, we will make our home page that will display all the products dynamic.
+Key feautures :
+We wrote an endpoint that will send all the data that was saved in mongodb using add products page earlier.
+We wrote code for how to receive data at frontend.
+We learnt how to display that data dynamically using product card created earlier.
+Summarize : Wrote an endpoint that will send all products data to frontend. In frontend we wrote an function to get all the data Display these data dynamically passing to product card component.
+Tech Stack : React - frontend - Home.jsx,Product.jsx 
+Backend - user.js, multer.js,app.js
+
+# Milestone 12 : In this milestone, we will make our My products page that will display all the products That I added according to my mail.
+Key feautures : 
+We will write an endpoint that will send all the products with mail that was saved in MongoDB using add products page earlier.
+We wrote an endpoint that will send data by filtering with my mail and send data from mongodb.
+We learnt how to receive data at frontend -How to display that data dynamically using product card created earlier.
+Summary : Write an endpoint that will send all products with user mail to frontend In frontend write an function to get all the data Display these data dynamically passing to product card component.
+Tech Stack : React - frontend - pages - myProduct.jsx.

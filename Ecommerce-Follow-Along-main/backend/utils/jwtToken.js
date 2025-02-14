@@ -12,6 +12,8 @@ const sendToken = (user,statusCode,res) => {
         sucess:true,
         token,
         user,
-    })
-}
+    });
+};
+
+
 module.exports = sendToken;
